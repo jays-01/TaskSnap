@@ -1,0 +1,61 @@
+/* Reset default styles for form elements */
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 100px 10px rgba(189, 188, 188, 0.5);
+    visibility: hidden;
+  }
+  
+  /* Style text input fields */
+  input[type="text"] {
+    border: none;
+    border-bottom: 2px solid transparent; /* Add a transparent bottom border */
+    border-radius: 0px;
+    padding: 10px;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  /* Style the bottom border for focused input fields */
+  input[type="text"]:focus {
+    border-bottom: 1px solid #ccc; /* Add a blue bottom border on focus */
+  }
+  
+  /* Set the height of the description text-box */
+  #description {
+    height: 50px;
+  }
+  
+  /* Style form buttons container */
+  .form-buttons-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Style common button styles */
+  button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #682ee4;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Style reset button */
+  button[type="reset"] {
+    background-color: white;
+    color: #767ba1;
+    border: 1px solid #767ba1;
+  }
+  

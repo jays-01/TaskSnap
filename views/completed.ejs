@@ -1,0 +1,41 @@
+<%- include('top') %>
+
+    <div class="item-box">
+        <% completed.forEach(myFunction); %>
+            <%function myFunction(item){%>
+                <div class="item">
+                    <form action="/delete" method="post">
+                        <div class="title">
+
+                            <input type="checkbox" class="task-item task-checkbox" id="<%= item.title%>"
+                                value="<%= item.title %>" onchange="this.form.submit()" name="checkBox">
+                            <label for="<%= item.title%>" class="custom-checkbox task-item"></label>
+                            <p class="task-name task-item">
+                                <%= item.title %>
+                            </p>
+
+                        </div>
+                        <br>
+                        <p class="description task-item">
+                            <%= item.description %>
+                        </p>
+
+                </div>
+                </form>
+                <div class="item-line"></div>
+                <% } %>
+    </div>
+
+
+    <form action="/" method="post" id="form">
+        <input type="text" name="newTask" placeholder="Task name here..." autocomplete="off" id="newTask">
+        <input type="text" name="description" placeholder="Description" autocomplete="off" id="description">
+        <div class="form-buttons-container"> <!-- Wrap the buttons in a container -->
+            <button type="submit" name="button" class="form-button" id="add-task">Add Task</button>
+            <button type="reset" name="cancel" class="form-button" id="cancel">Cancel</button>
+        </div>
+    </form>
+
+    <!-- <div style="height: 250px;"></div> -->
+
+    <%- include('bottom') %>

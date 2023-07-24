@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TaskSnap</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form-styles.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1 style="margin: auto; font-size:1.5rem; text-align:center;  padding:25px; color:#682EE4">
+        <img src="images/logo.png" alt="logo" width="60px">
+        <%= kindOfDay %>
+    </h1>
+    <div class="box">
+        <div class="nav-bar">
+
+            <div class="left-nav-items">
+                <a href="/" class="nav-item" id="todo">Todo</a>
+                <a href="completed" class="nav-item" id="completed">Completed</a>
+            </div>
+
+            <div class="right-nav-item">
+                <button type="submit" id="add-task-button" onclick="" action="\">+ New Task</button>
+            </div>
+        </div>
+
+        <div id="nav-line"></div>

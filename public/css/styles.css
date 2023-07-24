@@ -1,0 +1,190 @@
+/* Global Styles */
+html {
+    background-color: #eeeef4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
+  /* Container Styles */
+  .box {
+    width: 40%;
+    height: 540px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 100px 10px rgba(228.44, 228.44, 228.44, 0.50);
+  }
+  
+  .item-box {
+    margin-top: 15px;
+    overflow-y: auto;
+    height: 420px;
+  }
+  
+  /* Navigation Bar Styles */
+  .nav-bar {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .nav-item {
+    color: #767ba1;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 12px;
+  }
+  
+  
+  .nav-item.active {
+    color: black; /* Set the color for the active link */
+  }
+  
+  .left-nav-items {
+    display: flex;
+  }
+  
+  .right-nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item:hover {
+    display: block;
+    z-index: 10;
+    color: black;
+    padding-bottom: 22px;
+    border-color: #682ee4;
+    border-bottom: 15px;
+  }
+  
+  #add-task-button {
+    /* Your button styles here */
+    margin-top: 10px;
+    background-color: #682ee4;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  #add-task-button:hover {
+    /* background-color: #613cb1; */
+    cursor: pointer;
+  }
+  
+  #todo-label {
+    height: 3px;
+    margin-top: 59px;
+    margin-left: 15px;
+    background-color: #682ee4;
+    width: 30px;
+  }
+  
+  #nav-line {
+    z-index: 1;
+    background: rgba(184, 186, 205, 0.50);
+    height: 2px;
+  }
+  
+  /* Task Item Styles */
+  .item {
+    display: block;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    height: 80px;
+    text-align: left;
+    line-height: 0.8;
+    margin-right: 10px; /* Optional: Add some spacing between checkbox and paragraph */
+  }
+  
+  .task-item {
+    display: inline-block;
+    margin: 0;
+    margin-right: 15px;
+  }
+  
+  .task-name {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .description {
+    margin-left: 36px;
+    color: #767ba1;
+  }
+  
+  /* Checkbox Styles */
+  .task-checkbox {
+    display: none; /* Hide the default checkbox appearance */
+  }
+  
+  .custom-checkbox {
+    position: relative;
+    width: 15px; /* Set the width and height of the circular checkbox */
+    height: 15px;
+    border: 1px solid #767ba1; /* Border color for the circular checkbox */
+    border-radius: 50%; /* Make the checkbox circular */
+    cursor: pointer;
+  }
+  
+  .custom-checkbox::after {
+    content: "\2713"; /* Unicode for checkmark (✓) */
+    font-size: 15px;
+    color: #682ee4; /* Color for the checkmark */
+    /* background-color: ; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden; /* Hide the checkmark by default */
+  }
+  
+  .task-checkbox:checked + .custom-checkbox::after {
+    visibility: visible; /* Show the checkmark when the checkbox is checked */
+  }
+  
+  .task-checkbox:checked + p {
+    text-decoration: line-through;
+    text-decoration-color: #a683e3;
+  }
+  
+  /* Separator Line Styles */
+  .item-line {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    background: rgba(184, 186, 205, 0.50);
+    height: 1px;
+    border-radius: 5px;
+  }
+  
+  /* Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* ::-webkit-scrollbar-track{
+      margin-block: 15px;   
+  } */
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d3d3d8;
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #767ba1;
+    border-radius: 15px;
+  }
+  
+
+
